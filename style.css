@@ -47,6 +47,8 @@ html {
     color: #00ea58;
 }
 
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -80,6 +82,12 @@ main > .tagline {
 
 .icons-social i {
     padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+i:hover {
+    color: #ffffff;
+    transform: scale(1.5);
 }
 
 .devto {
