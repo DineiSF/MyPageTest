@@ -85,10 +85,13 @@ main > .tagline {
     transition: all 0.3s ease-in-out;
 }
 
-i:hover {
+.icons-social i:hover {
     color: #ffffff;
     transform: scale(1.5);
+    -o-transition-delay: 0.1s;
 }
+
+
 
 .devto {
     margin-bottom: 10px;
@@ -135,4 +138,53 @@ i:hover {
 .avatar img {
     width: 100%; 
     height: auto;
+}
+
+.search-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #04D361;
+    left: 50%;
+    top: 70%;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.search-btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 0px;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box .search-btn:hover {
+    background: #916BEA;
+    color: var(--color-button-text);
+    transition: .4s;
 }
