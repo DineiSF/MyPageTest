@@ -88,7 +88,7 @@ main > .tagline {
 .icons-social i:hover {
     color: #ffffff;
     transform: scale(1.5);
-    -o-transition-delay: 0.1s;
+    /* -o-transition-delay: 0.1s; */
 }
 
 
